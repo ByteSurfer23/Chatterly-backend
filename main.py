@@ -40,7 +40,7 @@ def root():
     return RedirectResponse(url="/docs")
 
 print("🎙️ Loading Whisper model...")
-whisper_model = whisper.load_model("small")
+whisper_model = whisper.load_model("tiny")
 print("✅ Whisper model loaded")
 
 print("🤖 Loading local GPT-Neo text generation model...")
@@ -161,3 +161,4 @@ async def upload_wav(file: UploadFile = File(...)):
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
