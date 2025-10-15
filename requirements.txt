@@ -5,9 +5,10 @@ scipy
 keyboard
 fastapi
 uvicorn
-whisper
+openai-whisper
 soundfile
 numpy
 transformers
 torch
 dateparser
+
